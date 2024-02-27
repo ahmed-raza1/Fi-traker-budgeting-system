@@ -1,4 +1,4 @@
-# FinalYearProject-Stockpredictor
+# FBudgeting System project 
 
 
 
