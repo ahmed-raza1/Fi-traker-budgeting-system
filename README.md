@@ -45,8 +45,8 @@ Use the built-in continuous integration in GitLab.
 ***
 
 
-## Authors and acknowledgment
-COntributors : Ahmed Raza
+## Authors and acknowledgement
+Contributors : Ahmed Raza
 
 ## License
 For open source projects
