@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_login.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<h2 class="login-heading"> Login</h2>
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+<p class="flash {{ category }}">{{ message }}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<form method="post" action="{{ url_for('login') }}" class="login-form fade-in-left">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <input type="submit" value="Login">
+</form>
+{% endblock %}
